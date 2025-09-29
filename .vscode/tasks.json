@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build OpenGL App",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "main.cpp",
+        "-std=c++17",
+        "-I/opt/homebrew/opt/glew/include",
+        "-I/opt/homebrew/opt/glfw/include",
+        "-L/opt/homebrew/opt/glew/lib",
+        "-L/opt/homebrew/opt/glfw/lib",
+        "-framework", "OpenGL",
+        "-lglfw",
+        "-lglew",
+        "-o", "app"
+      ],
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}

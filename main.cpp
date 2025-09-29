@@ -19,7 +19,7 @@ if (window == NULL)
     std::cout << "Failed to create GLFW window" << std::endl;
     glfwTerminate();
     return -1;
-    // i love coke
+    S
     ilobeee
 }
 glfwMakeContextCurrent(window);
